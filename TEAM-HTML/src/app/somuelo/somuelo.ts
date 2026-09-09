@@ -8,4 +8,5 @@ import { Component, signal } from '@angular/core';
 })
 export class Somuelo {
   name = signal('Somuelo');
+  imagePath = signal('assets/somuelo/somuelo.jpg');
 }
