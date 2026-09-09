@@ -1,0 +1,34 @@
+<h2>{{ name() }}</h2>
+<img [src]="photoPath()" alt="Photo of Somuelo" width="200">
+<button (click)="toggleDescription()">About Me</button>
+@if (showDescription()) {
+  <p>{{ description() }}</p>
+}
+
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image">
+      <img src="assets/somuelo/somuelo.jpg" alt="Avatar of Somuelo">
+    </div>
+    <div class="header-copy">
+      <mat-card-title>Alarie Somuelo</mat-card-title>
+      <mat-card-subtitle>My Toothless</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <img mat-card-image src="assets/somuelo/toothless.jpg" alt="Photo of my Toothless toy">
+  <mat-card-content>
+    <p>
+      This is toothless.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button matButton>
+      <mat-icon>thumb_up</mat-icon>
+      LIKE
+    </button>
+    <button matButton>
+      <mat-icon>share</mat-icon>
+      SHARE
+    </button>
+  </mat-card-actions>
+</mat-card>
