@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Masangkay } from './masangkay/masangkay';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Masangkay],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
