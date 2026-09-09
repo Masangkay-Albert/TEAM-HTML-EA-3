@@ -1,2 +1,5 @@
 <h2>{{ name() }}</h2>
 <img [src]="imagePath()" alt="Photo of Somuelo" width="200">
+
+<button (click)="onShowDescription()">About Me</button>
+<p *ngIf="showDescription">{{ description() }}</p>
