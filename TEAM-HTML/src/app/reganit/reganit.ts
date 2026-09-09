@@ -8,4 +8,5 @@ import { Component, signal } from '@angular/core';
 })
 export class Reganit {
   name = signal ("John Raphael");
+  photoPath = signal('assets/reganit/reganit.png');
 }
