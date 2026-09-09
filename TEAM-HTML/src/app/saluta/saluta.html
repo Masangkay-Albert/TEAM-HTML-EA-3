@@ -5,3 +5,26 @@
 @if (showDescription()) {
   <p>{{ description() }}</p>
 }
+
+
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image">
+      <img src="assets/masangkay/saluta/james3.jpg" alt="dog">
+    </div>
+    <div class="header-copy">
+      <mat-card-title>James Saluta</mat-card-title>
+      <mat-card-subtitle>Hershey</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <img mat-card-image src="assets/masangkay/saluta/jaems1.jpg" alt="Photo of dog">
+  <mat-card-content>
+    <p>
+      This is a photo of hershey.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button matButton>LIKE</button>
+    <button matButton>SHARE</button>
+  </mat-card-actions>
+</mat-card>
