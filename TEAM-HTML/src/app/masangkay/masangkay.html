@@ -4,3 +4,25 @@
 @if (showDescription()) {
   <p>{{ description() }}</p>
 }
+
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image">
+      <img src="assets/masangkay/luffy.jpg" alt="Luffy Image">
+    </div>
+    <div class="header-copy">
+      <mat-card-title>One Piece</mat-card-title>
+      <mat-card-subtitle>Straw Hats</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <img mat-card-image src="assets/masangkay/op.jpg" alt="Photo of Straw Hats">
+  <mat-card-content>
+    <p>
+      This photo is the Straw Hats from the anime One Piece. The Straw Hats are a group of pirates led by Monkey D. Luffy, who is on a quest to find the legendary treasure known as "One Piece" and become the Pirate King.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button matButton>LIKE</button>
+    <button matButton>SHARE</button>
+  </mat-card-actions>
+</mat-card>
