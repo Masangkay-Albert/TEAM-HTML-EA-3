@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-masangkay',
-  imports: [],
+  imports: [MatCardModule, MatButtonModule],
   templateUrl: './masangkay.html',
   styleUrl: './masangkay.scss',
 })
