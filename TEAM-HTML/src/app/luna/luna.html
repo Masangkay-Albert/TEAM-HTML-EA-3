@@ -1,2 +1,6 @@
 <h2>{{ name() }}</h2>
 <img [src]="photoPath()" alt="Gracy Image" width="200">
+<button (click)="toggleDescription()">About Luna</button>
+@if (showDescription()) {
+  <p>{{ description() }}</p>
+}
