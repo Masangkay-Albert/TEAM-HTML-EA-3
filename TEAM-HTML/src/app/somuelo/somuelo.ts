@@ -1,19 +1,21 @@
-import { Component, signal } from '@angular/core';
+import { Component,signal } from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @Component({
   selector: 'app-somuelo',
-  imports: [],
+  imports: [MatCardModule, MatButtonModule],
   templateUrl: './somuelo.html',
   styleUrl: './somuelo.scss',
 })
 export class Somuelo {
-  name = signal('Somuelo');
-  imagePath = signal('assets/somuelo/somuelo.jpg');
-  description = signal('');
-  showDescription = false;
+  name = signal ("Alarie Somuelo");
+  photoPath = signal('assets/somuelo.jpg');
+  showDescription = signal(false);
+  description = signal('Alarie Somuelo is a 4th-year IT student who loves the color blue and enjoys swimming.');
 
-  onShowDescription() {
-    this.showDescription = true;
-    this.description.set('I am a BSIT student who enjoys coding and building web applications.');
+  toggleDescription() {
+    this.showDescription.set(!this.showDescription());
   }
 }
