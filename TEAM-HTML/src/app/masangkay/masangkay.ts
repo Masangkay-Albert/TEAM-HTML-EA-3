@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-masangkay',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './masangkay.html',
   styleUrl: './masangkay.scss',
 })
-export class Masangkay {}
+export class Masangkay {
+  name = signal ("John Albert");
+}
