@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-reganit',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './reganit.scss',
 })
 export class Reganit {
-
+name = signal ("John Raphael");
 }
