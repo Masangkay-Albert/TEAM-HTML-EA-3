@@ -18,7 +18,7 @@ export class Masangkay {
       + '-Dasmarinas, taking a Bachelor of Science in Information Technology.'
   );
 
-  toggleDescription(): void {
+    toggleDescription(): void {
     this.isDescriptionVisible.set(!this.isDescriptionVisible());
   }
 }
