@@ -1,7 +1,7 @@
 <h2>{{ name() }}</h2>
 <img [src]="photoPath()" alt="Masangkay Image" width="200">
 <button (click)="toggleDescription()">About Masangkay</button>
-@if (showDescription()) {
+@if (isDescriptionVisible()) {
   <p>{{ description() }}</p>
 }
 
@@ -18,7 +18,8 @@
   <img mat-card-image src="assets/masangkay/op.jpg" alt="Photo of Straw Hats">
   <mat-card-content>
     <p>
-      This photo is the Straw Hats from the anime One Piece. The Straw Hats are a group of pirates led by Monkey D. Luffy, who is on a quest to find the legendary treasure known as "One Piece" and become the Pirate King.
+      This photo is the Straw Hats from the anime One Piece. The Straw Hats are a group of pirates led by Monkey D. Luffy, 
+      who is on a quest to find the legendary treasure known as "One Piece" and become the Pirate King.
     </p>
   </mat-card-content>
   <mat-card-actions>
