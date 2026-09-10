@@ -2,7 +2,7 @@
 <img [src]="photoPath()" alt="James Image" width="200">
 
 <button (click)="toggleDescription()">About James</button>
-@if (showDescription()) {
+@if (isDescriptionVisible()) {
   <p>{{ description() }}</p>
 }
 

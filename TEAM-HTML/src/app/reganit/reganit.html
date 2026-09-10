@@ -3,7 +3,7 @@
 
 
 <button (click)="toggleDescription()">About Raphael</button>
-@if (showDescription()) {
+@if (isDescriptionVisible()) {
   <p>{{ description() }}</p>
 }
 
