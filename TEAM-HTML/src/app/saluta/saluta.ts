@@ -11,11 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class Saluta {
   name = signal('James Saluta');
-   photoPath = signal('assets/masangkay/saluta/james2.jpg');
-   showDescription = signal(false);
-  description = signal('James Saluta is a 4th-year IT student who loves r to design web pages.');
+  photoPath = signal('assets/masangkay/saluta/james2.jpg');
+  isDescriptionVisible = signal(false);
+  description = signal('James Saluta is a 4th-year IT student who loves to design web pages.');
 
-  toggleDescription() {
-    this.showDescription.set(!this.showDescription());
+  toggleDescription(): void {
+    this.isDescriptionVisible.set(!this.isDescriptionVisible());
   }
 }
+
