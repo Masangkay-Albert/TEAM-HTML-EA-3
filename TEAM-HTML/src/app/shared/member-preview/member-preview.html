@@ -1,0 +1,27 @@
+<h2>{{ name() }}</h2>
+<img [src] = "photoPath()" [alt]="photoAlt()" width="200">
+<button (click) = "toggleDescriptionVisibility()"> About {{ name() }} </button>
+@if (isDescriptionVisible()) {
+     <p>{{ description() }}</p>
+}
+
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image">
+      <img [src]="avatarPath()" [alt]="avatarAlt()">
+    </div>
+    <div class="header-copy">
+      <mat-card-title>{{ cardTitle() }}</mat-card-title>
+      <mat-card-subtitle>{{ cardSubtitle() }}</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <img mat-card-image [src]="cardImagePath()" [alt]="cardImageAlt()">
+  <mat-card-content>
+    <p>{{ cardText() }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button matButton>LIKE</button>
+    <button matButton>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+
