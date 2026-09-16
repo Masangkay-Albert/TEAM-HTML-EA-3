@@ -1,30 +1,13 @@
-<h2>{{ name() }}</h2>
-<img [src]="photoPath()" alt="Raphael Image" width="200">
-
-
-<button (click)="toggleDescription()">About Raphael</button>
-@if (isDescriptionVisible()) {
-  <p>{{ description() }}</p>
-}
-
-<mat-card class="example-card" appearance="outlined">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image">
-      <img src="assets/reganit/ping.png" alt="Raphael Image">
-    </div>
-    <div class="header-copy">
-      <mat-card-title>John Raphael</mat-card-title>
-      <mat-card-subtitle>My cat</mat-card-subtitle>
-    </div>
-  </mat-card-header>
-  <img mat-card-image src="assets/reganit/playing.png" alt="Photo of cat">
-  <mat-card-content>
-    <p>
-      This is a photo of my cat playing with a fishing rod toy.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button matButton>LIKE</button>
-    <button matButton>SHARE</button>
-  </mat-card-actions>
-</mat-card>
+<app-member-preview
+  [name] = "name()"
+  [photoPath] = "photoPath()"
+  photoAlt = "Raphael Image"
+  [description] = "description"
+  [avatarPath] = "avatarPath()"
+  avatarAlt = "Raphael Avatar"
+  [cardImagePath] = "cardImagePath()"
+  cardImageAlt = "Photo of a Cat"
+  [cardTitle] = "cardTitle()"
+  [cardSubtitle] = "cardSubtitle()"
+  [cardText] = "cardText"
+/>
