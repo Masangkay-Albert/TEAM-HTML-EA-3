@@ -1,2 +1,13 @@
-<h2>{{ name() }}</h2>
-<img [src]="imagePath()" alt="Photo of Somuelo" width="200">
+<app-member-preview
+  [name] = "name()"
+  [photoPath] = "photoPath()"
+  photoAlt = "Somuelo Image"
+  [description] = "description"
+  [avatarPath] = "avatarPath()"
+  avatarAlt = "Somuelo Avatar"
+  [cardImagePath] = "cardImagePath()"
+  cardImageAlt = "Photo of a capybara"
+  [cardTitle] = "cardTitle()"
+  [cardSubtitle] = "cardSubtitle()"
+  [cardText] = "cardText"
+/>
